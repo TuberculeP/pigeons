@@ -1,0 +1,41 @@
+aside{
+  overflow: scroll;
+  border-radius: 0 0 0 50px;
+  nav{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 50px auto;
+    a{
+      display: block;
+      width: fit-content;
+      margin: 20px;
+    }
+  }
+  div.gallery{
+    display: block;
+    h3{
+      text-align: center;
+      margin: 20px;
+    }
+    div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  @media screen and (max-width: 800px){
+    nav{
+      display: flex;
+    }
+    div.gallery{
+      display: none;
+    }
+  }
+}
